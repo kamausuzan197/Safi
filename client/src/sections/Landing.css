@@ -1,0 +1,26 @@
+.landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+.landingimg{
+    width: 100%;
+    object-fit: contain;
+    
+}
+.ld_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.ld_left> h1{
+    font-size: 50px;
+}
+.ld_right{
+    width: 50%;
+}
+.ld_button{
+    display: flex;
+    column-gap: 40px;
+}
