@@ -12,18 +12,20 @@
 
 ActiveRecord::Schema.define(version: 2022_09_07_050459) do
 
-  create_table "laundry", force: :cascade do |t|
+  create_table "laundries", force: :cascade do |t|
     t.string "name"
     t.string "variety"
     t.integer "price"
   end
 
-  create_table "review", force: :cascade do |t|
+  create_table "reviews", force: :cascade do |t|
     t.string "comment"
     t.integer "ordernumber"
+    t.integer "laundry_id"
+    t.integer "user_id"
   end
 
-  create_table "user", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
   end
 
