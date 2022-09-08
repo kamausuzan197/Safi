@@ -1,13 +1,18 @@
 import React from "react";
 import Button from "../components/Button";
 import "./Landing.css";
+import Features from "./Features";
 
 function Landing() {
+  const handleUpdateButtonClick = () => {
+    //redirect to the login page
+    window.location.href = "/review";
+  }
   return (
     <div className="landing">
       <div className="ld_left">
         <h1>
-          Having trable with
+          Having trouble with
           <br /> laundry place?
         </h1>
         <p>
@@ -17,6 +22,7 @@ function Landing() {
         </p>
         <div className="ld_button">
           <Button
+              onClick={handleUpdateButtonClick}
             name="Update Order"
             bgColor="blue"
             color="white"
@@ -42,6 +48,7 @@ function Landing() {
         />
       </div>
     </div>
+
   );
 }
 
