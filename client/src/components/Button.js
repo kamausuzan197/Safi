@@ -1,16 +1,18 @@
 import React from "react";
 
-function Button({ name, bgColor, color, radius, padding, fontSize }) {
+function Button({ name, bgColor, color, radius, padding, fontSize, onClick }) {
   return (
     <button
+        onClick={onClick}
       style={{
-        border:'none',
-        width:'100%',
-        backgroundColor: bgColor,
-        color: color,
-        borderRadius: radius,
-        padding,
-        fontSize,
+          cursor: "pointer",
+          border:'none',
+          width:'50%',
+          backgroundColor: bgColor,
+          color: color,
+          borderRadius: radius,
+          padding,
+          fontSize,
       }}
     >
       {name}
