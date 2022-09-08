@@ -3,6 +3,10 @@ import "./Navbar.css";
 import Button from "./Button";
 
 function Navbar() {
+    const handleOrderButtonClick = () => {
+        //redirect to the login page
+        window.location.href = "/order";
+    }
   return (
     <div className="navbar">
       <div className="leftnav">
@@ -15,12 +19,13 @@ function Navbar() {
           <h2>Contact</h2>
         </span>
         <Button
-          name="Order"
-          bgColor="red"
-          color="black"
-          padding="8px"
-          radius="10px"
-          fontSize='26px'
+            onClick={handleOrderButtonClick}
+              name="Order"
+              bgColor="red"
+              color="black"
+              padding="8px"
+              radius="10px"
+              fontSize='26px'
         />
       </div>
     </div>
