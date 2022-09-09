@@ -16,7 +16,7 @@ function Navbar() {
         <span className="navlinks">
           <h2>Features</h2>
           <h2>Pricing</h2>
-          <h2>Contact</h2>
+          {/* <h2>Contact</h2> */}
         </span>
         <Button
             onClick={handleOrderButtonClick}
