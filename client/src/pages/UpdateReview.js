@@ -1,6 +1,7 @@
 import "./Form.css";
 import Button from "../components/Button";
 import { useState } from "react";
+import Success from "./Success";
 function UpdateReview({ orderID, userID }) {
   const [comment, setComment] = useState("");
   const [laundryID, setLaundryID] = useState(0);
@@ -23,6 +24,7 @@ function UpdateReview({ orderID, userID }) {
     })
       .then((res) => res.json())
       .then((newReview) => console.log(newReview));
+    window.location.href = "/success"
   }
   return (
     <div className="form">
