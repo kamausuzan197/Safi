@@ -23,6 +23,7 @@ function OderForm() {
     })
       .then((res) => res.json())
       .then((newOrder) => UpdateReview(newOrder.id));
+    window.location.href = '/user'
   }
 
   return (
@@ -41,7 +42,7 @@ function OderForm() {
             label="Price"
             name="price"
             type="number"
-            placeholder="title .."
+            placeholder="price .."
             onChange={(e) => setPrice(e.target.value)}
           />
           <input
