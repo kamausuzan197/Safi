@@ -1,4 +1,2 @@
-class Review < ActiveRecord::Base
-    belongs_to  :laundry
-    belongs_to  :user
+class Review < ApplicationRecord
 end

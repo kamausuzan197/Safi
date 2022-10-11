@@ -8,7 +8,7 @@ function Footer() {
             {/* <p className="fp">0714098781</p> */}
             <h4 className="fh2">0712345678</h4>
         </div>
-      <p className="fp">Disign and build by Suzan with 💙</p>
+      <p className="fp">Design and build by Suzan with 💙</p>
     </div>
   );
 }

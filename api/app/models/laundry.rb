@@ -1,4 +1,2 @@
-class Laundry < ActiveRecord::Base
-    has_many  :reviews
-    has_many :users, through: :reviews
+class Laundry < ApplicationRecord
 end
